@@ -1,0 +1,43 @@
+# .dockerignore - ป้องกันไฟล์ sensitive เข้า Docker image
+node_modules
+npm-debug.log
+.git
+.gitignore
+README.md
+.env
+.env.*
+.nyc_output
+coverage
+.DS_Store
+*.log
+
+# 🔐 Security: ป้องกันไฟล์ sensitive
+credentials.json
+.env.credentials
+convert-credentials.js
+*.pem
+*.key
+.ssh/
+
+# Development files
+test/
+docs/
+backup-config.sh
+*.md
+.vscode/
+.idea/
+
+# OS generated files
+Thumbs.db
+.DS_Store
+*.swp
+*.swo
+
+# Build artifacts
+dist/
+build/
+tmp/
+
+# Docker files (ไม่จำเป็นใน image)
+docker-compose*.yml
+Dockerfile.dev
